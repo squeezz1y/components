@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/styles.css">
+	
+	<title>Доставка Friends&Family</title>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<meta name="description"
+		content="Гарантируем безопасную и быструю ДОСТАВКУ любых объемов. Бережное отношение к вашим вещам. Приемлемые цены. Индивидуальный подход к каждому клиенту.">
+	<meta name="keywords" content="доставка,быстро,Россия,Украина,низкие,цены,переез,посылка">
+
+</head>
+
+<body>
+
+	<header class="header" id="header">
+		<div class="container">
+
+			<div class="header__inner">
+
+				<div class="header__logo" data-scroll="#intro">
+					<img src="/assets/logo.png" alt="">
+				</div>
+
+
+				<nav class="nav" id="nav">
+					<a class="nav__link" href="#" data-scroll="#about">Оформление заказа</a>
+					<a class="nav__link" href="#" data-scroll="#services">Как мы работаем</a>
+					<a class="nav__link" href="#" data-scroll="#contacts">Контакты</a>
+					<a class="nav__link" href="#" data-scroll="#feed">Отзывы</a>
+
+
+				</nav>
+				<div class="social">
+					<a href=""><img class="social__img" src="/assets/facebook.png" alt=""></a>
+					<a href="https://www.instagram.com/friends.family.market/?hl=undefined"><img class="social__img" src="/assets/instagram.png" alt=""></a>
+					<a href="https://t.me/friendsfamilydiscount"><img class="social__img" src="/assets/telegram.png" alt=""></a>
+
+				</div>
+
+				<button class="nav-toggle" id="nav_toggle" type="button">
+					<span class="nav-toggle__item">Menu</span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+
+
+
+	<!-- Intro -->
+
+
+	<div class="intro" id="intro">
+		<div class="intro__inner">
+
+			<h1 class="intro__title">ДОСТАВИМ ВАШИ ПОСЫЛКИ ИЗ УКРАИНЫ <br> В РОССИЮ И ОБРАТНО</h1>
+
+			<p class="intro__info">Гарантируем безопасную и быструю достаку <br> любых объемов от пары кроссовок до
+				переездов <br> в Россию, Казахстан и обратно</p>
+
+		</div>
+		<div class="image">
+			<img class="image__inner" src="/assets/intro5.png" alt="">
+		</div>
+	</div>
+
+	<section class="declaration">
+		<p class="declaration__info">Заказы принимаются круглосуточно. Оставляйте свои заявки и менеджер ответит вам в
+			мессенджере. <br> Доставляем течении 3-5 рабочих дней в Москву и Санкт-Петербург! Вы можете рассчитать
+			стоимость в <br> калькуляторе и оформить заказ</p>
+	</section>
+
+
+
+	</div><!-- /.intro -->
+	<section class="feedback">
+		<div class="container">
+			<div class="form">
+				<div class="form__inner">
+
+					<div id="about">
+						<div>
+							<h3>Вес (кг)</h3>
+							<input type="text" name="adress" id="vol" class="form-control" placeholder="2" required="" />
+						</div>
+						<div><span id="out">0.0</span> <span class="rub">₽</span></div>
+						<div>
+							<div>
+								<input class="btn" type="button" name="adress" id="btn" value="Считать" />
+							</div>
+						</div>
+						<p>Оформите заказ, заполнив форму ниже и с вами свяжется оператор!</p>
+					</div>
+
+
+					<form id="userForm">
+						<div>
+							<h3>Ваш email</h3>
+							<input type="text" name="useremail" class="form-control" id="useremail" required=""
+								placeholder="example@mail.com" required="" />
+						</div>
+						<div>
+							<h3>Ваш телефон</h3>
+							<input type="text" name="userdate" class="form-control" id="userdate" required="" placeholder="+"
+								required="" />
+						</div>
+						<div>
+							<h3>Как к вам обращаться</h3>
+							<input type="text" name="username" class="form-control" id="username" required=""
+								placeholder="Иван Смирнов" required="" />
+						</div>
+						<div>
+							<h3>Укажие содержимое вашей посылки </h3>
+							<p>(Новые вещи, Б\У вещи, товары, продукты питания, бытовая техника)</p>
+							<input type="text" name="usertext" class="form-control" id="usertext" required="" required="" />
+							<p><strong>Выберите способ оплаты</strong></p>
+							<p><select id="payment" name="payment">
+									<option value="Наличные при получении в МСК/СПБ">Наличные при получении в МСК/СПБ</option>
+									<option value="Предварительно на карту (все остальные случаи)" selected>Предварительно на
+										карту (все остальные случаи)</option>
+								</select>
+
+							<p><strong>Выберите способ доставки</strong></p>
+							<p><select id="delivery" name="delivery">
+									<option value="Заберем лично в МСК/СПБ">Заберем лично в МСК/СПБ</option>
+									<option value="СДЭК" selected>СДЭК</option>
+									<option value="Почта России">Почта России</option>
+									<option value="Курьер МСК/СПБ">Курьер МСК/СПБ</option>
+								</select>
+
+						</div>
+						<div class="g-recaptcha" data-sitekey="6LfgE6QeAAAAALC1eGAQLchmK0tl-yq--HoWmAgC"></div>
+						<br/>
+						<input class="btn" type="submit" id="btn-send" value="ЗАКАЗАТЬ"></p>
+					</form>
+					
+					
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+	</section>
+
+	<section>
+		<div id="services" class="info">
+			<div class="container">
+				<div class="services">
+					<div class="services__item  services__item--border">
+						<img class="services__icon" src="/assets/star.png" alt="">
+
+						<div class="services__title">Удобство</div>
+						<div class="services__text">Сделайте заказ с помощью удобной формы и получите предварительную
+							стоимость. Все максимально прозрачно</div>
+					</div>
+					<div class="services__item  services__item--border">
+						<img class="services__icon" src="/assets/chat.png" alt="">
+
+						<div class="services__title">Процесс доставки</div>
+						<div class="services__text">Наши склады находятся в Одессе и Санкт-Петербурге. Оттуда посылки
+							направятся вашим получателям. Работаем с транспортными компаниями СДЭК, Новая Почта.</div>
+					</div>
+					<div class="services__item  services__item--border">
+						<img class="services__icon" src="/assets/group.png" alt="">
+
+						<div class="services__title">Любые клиенты</div>
+						<div class="services__text">Мы работаем как с небольшими личными посылками так и поставщиками
+							различных брендов одежды и магазинов.</div>
+					</div>
+					<div class="services__item">
+						<img class="services__icon" src="/assets/time.png" alt="">
+
+						<div class="services__title">Скорость доставки</div>
+						<div class="services__text">Рассматриваем заявку мгновенно. Доставка происходит каждую неделю, сроки
+							доставки 2-3 дня со склада на склад.</div>
+					</div>
+					<div class="services__item">
+						<img class="services__icon" src="/assets/gift.png" alt="">
+
+						<div class="services__title">Скидки</div>
+						<div class="services__text">Доставка крупных посылок дешевле на еденицу измерения. Постоянным клиентам
+							гарантируются особые условия.</div>
+					</div>
+					<div class="services__item">
+						<img class="services__icon" src="/assets/wifi.png" alt="">
+
+						<div class="services__title">Поддержка</div>
+						<div class="services__text">Консультируем по всем вопросам услуг доставки. Мы держим Вас в курсе всего
+							процесса доставки.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="contacts">
+		<div class="feedback">
+			<a href="http://" target="_blank" rel="noopener noreferrer">
+				<img class="feedback__icons" src="/assets/ff.png" alt="">
+			</a>
+			<a href="https://www.instagram.com/friends.family.market/?hl=undefined" target="_blank" rel="noopener noreferrer">
+				<img class="feedback__icons" src="/assets/ii.png" alt="">
+			</a>
+			<a href="https://t.me/friendsfamilydiscount" target="_blank" rel="noopener noreferrer">
+				<img class="feedback__icons" src="/assets/tt.png" alt="">
+			</a>
+		</div>
+	</section>
+
+	<section>
+		<div class="dialog">
+			<div class="container">
+				<div class="reviews" id="feed">
+					<div class="comment">
+						<div class="comment__bubble">
+							<img class="coment__img" src="/assets/woman1.png" alt="">
+							<h3 class="reviews__title">Тамара Ларина</h3>
+							<p class="comment__text">Вы профессионалы. При первой встрече я рассказала об идее проекта, а вы
+								помогли доработать ее во что-то особое</p>
+
+						</div>
+
+
+					</div>
+					<div class="comment">
+						<div class="comment__bubble">
+							<img class="coment__img" src="/assets/woman2.png" alt="">
+							<h3 class="reviews__title">Рита Кац</h3>
+							<p class="comment__text">мы узнали много нового и получили очень дельные советы. Очень рекомендуем.
+								Максимально быстрая и качественная доставка!</p>
+
+						</div>
+
+					</div>
+					<div class="comment">
+						<div class="comment__bubble">
+							<img class="coment__img" src="/assets/woman3.png" alt="">
+							<h3 class="reviews__title">Юличя Санина</h3>
+							<p class="comment__text">Отличные ребята, очень умело организовали рабочий процесс. Спасибо вам за
+								скорость и качество. Рекомендую!</p>
+
+						</div>
+
+					</div>
+					<div class="comment">
+						<div class="comment__bubble">
+							<img class="coment__img" src="/assets/woman4.png" alt="">
+							<h3 class="reviews__title">Саша Коротких</h3>
+							<p class="comment__text">Работая в большой корпорации, сложнее все держать под контролем. Так что
+								это идеальный сервис для нас.</p>
+
+						</div>
+
+					</div>
+
+
+
+
+				</div>
+
+
+			</div>
+		</div>
+
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer">
+				<p class="info__footer">Copyright © 2021 Friends&Family inc. All rights reserved. </p>
+				<div class="footer__inner">
+					<a href=""><img class="footer__img" src="/assets/ffwhite.png" alt=""></a>
+					<a href=""><img class="footer__img" src="/assets/iiwhite.png" alt=""></a>
+					<a href=""><img class="footer__img" src="/assets/ttwhite.png" alt=""></a>
+
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="/index.js"></script>
+<script src="/form.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script>
+
+
+
+</html>
